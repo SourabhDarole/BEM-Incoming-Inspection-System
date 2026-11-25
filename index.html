@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b4ea2">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Incoming parts inspection for Blue Energy Motors, Chakan. Works offline.">
+  <title>BEM Incoming Inspection System</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="db.js" defer></script>
+  <script src="ui.js" defer></script>
+  <script src="inspection.js" defer></script>
+  <script src="ncr.js" defer></script>
+  <script src="dashboard.js" defer></script>
+  <script src="reports.js" defer></script>
+  <script src="masters.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="appbar no-print" id="brand">
+    <div class="app-name">BEM Incoming Inspection System</div>
+    <div class="app-sub">Blue Energy Motors, Chakan</div>
+  </header>
+  <div class="userbar no-print" id="userbar" hidden>
+    <span id="userInfo"></span>
+    <button type="button" class="btn small" id="btnSwitch">Switch user</button>
+  </div>
+  <nav class="navbar no-print" id="navbar" hidden>
+    <button type="button" class="btn small" id="btnBack">◀ Back</button>
+    <button type="button" class="btn small" id="btnHome">Home</button>
+  </nav>
+  <div id="offlineNote" class="no-print"></div>
+  <main id="view">
+    <div class="card"><p>Loading…</p>
+      <noscript><div class="alert red">JavaScript is switched off. Turn it on in Chrome settings to use this app.</div></noscript>
+    </div>
+  </main>
+</body>
+</html>
